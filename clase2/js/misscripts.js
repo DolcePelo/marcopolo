@@ -30,13 +30,15 @@ function recibeUnTipoDeDato(z) {
 }
 */
 
-{
+
+function crearLista(arrayTxt) {
     let ul = document.createElement('ul')
-    var li = document.createElement('li')
-    li.innerHTML = 'Hola amigos punto 1'
-    ul.appendChild(li)
-    // ul.className = 'frenteRojo'
-    console.log(ul)
+    // for (let x = 0; x < arrayTxt.length -1; x++) {}
+    for (let item of arrayTxt) {
+        let li = document.createElement('li')
+        li.innerHTML = item
+        ul.appendChild(li)
+    }
     document.body.appendChild(ul)
 }
 
@@ -47,3 +49,14 @@ Luego de esto. Crear una funcion que tome como argumento un array
 y agregue en la lista todos los elementos del array
 ['item uno', 'item 2', 'item 3']
 */
+
+// Acerca de Mustache
+
+{
+    let miDisplay = document.getElementById('miDisplay')
+    let tmpl = 'Hola, mi nombre es {{nombre}}'
+    let objeto = {nombre:'Anita'}
+
+    let renderFinal = Mustache.render(tmpl, objeto)
+    miDisplay.innerHTML = renderFinal
+}
