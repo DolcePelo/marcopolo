@@ -1,0 +1,60 @@
+Buenas noche,
+Alumno: Adrian Burgio-802834
+
+{
+    // primera isntancia
+    let intputTypeText = document.createElement("INPUT");
+    intputTypeText.setAttribute("type", "text");
+    intputTypeText.setAttribute("id", "intputTypeText");
+    document.body.appendChild(intputTypeText);
+
+    let intputTypeButton = document.createElement("INPUT");
+    intputTypeButton.setAttribute("type", "button");
+    intputTypeButton.setAttribute("value", "Mostrar");
+    intputTypeButton.addEventListener("click", mostrar);
+    document.body.appendChild(intputTypeButton)
+
+    nuevaLinea = document.createElement("br");
+    document.body.appendChild(nuevaLinea);
+
+    function mostrar() {
+        alert(document.getElementById("intputTypeText").value)
+    }
+
+    // segunda isntancia
+    let sintputTypeText = document.createElement("INPUT");
+    sintputTypeText.setAttribute("type", "text");
+    sintputTypeText.setAttribute("id", "sintputTypeText");
+    document.body.appendChild(sintputTypeText);
+
+    let sintputTypeButton = document.createElement("INPUT");
+    sintputTypeButton.setAttribute("type", "button");
+    sintputTypeButton.setAttribute("value", "Incrementar");
+    sintputTypeButton.addEventListener("click", sIncrementar);
+    document.body.appendChild(sintputTypeButton)
+
+    function sIncrementar() {
+        let n = document.getElementById("sintputTypeText").value
+        alert(isNaN(n) ? 'No es un número':parseFloat(n)+1 )
+    }
+
+    // Conjetura de collatz
+    let collatzintputTypeButton = document.createElement("INPUT");
+    collatzintputTypeButton.setAttribute("type", "button");
+    collatzintputTypeButton.setAttribute("value", "Collatz");
+    collatzintputTypeButton.addEventListener("click", collatz);
+    document.body.appendChild(collatzintputTypeButton)
+
+    function collatz() {
+        let n = document.getElementById("sintputTypeText").value
+        if(!isNaN(n)) 
+        {
+            while (n > 1) {
+                n = (n%2==0)?(n/2):((n*3)+1)
+                console.log(n)
+            }
+            console.log('---')
+        }
+    }
+
+}

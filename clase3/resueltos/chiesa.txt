@@ -1,0 +1,47 @@
+Buenas noches
+Alumno Claus Nemi
+
+// Ejercicios
+// Mostrar input
+
+
+{
+	let input = document.createElement('input')
+    input.setAttribute('type','text')
+	input.setAttribute('class','nuevoTexto')
+	input.setAttribute('id','uname')
+	input.setAttribute('name','uname')
+    document.body.appendChild(input)
+
+    let Leer = document.createElement('button')
+    Leer.setAttribute('type','submit')
+	Leer.setAttribute('name','formButton')
+	Leer.innerHTML = 'Aceptar'
+	document.body.appendChild(Leer)
+
+    Leer.addEventListener('click', function(){ alert(input.value)})
+	document.body.appendChild(Leer)
+
+    let incremento = document.createElement('button')
+    incremento.setAttribute('type','submit')
+	incremento.setAttribute('name','formButton')
+	incremento.innerHTML = 'Incremento'
+	document.body.appendChild(incremento)
+
+ // Funcion colattz
+
+    function colattz(n) {
+        if (n > 0 ) {
+            while (n !== 1) {
+                if (n % 2 === 0) {
+                    n = n / 2
+                } else if (n % 2 !== 0) {
+                    n = (n * 3) + 1
+                }
+            }
+        } else {
+            alert('solo numeros enteros!')
+        }}
+
+        console.log(colattz)
+
