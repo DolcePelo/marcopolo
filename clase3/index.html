@@ -33,44 +33,32 @@
       <div class="row altura60">
     </div>
         <div id="miDisplay" class="col-sm-12">
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
+
         </div>
     </div>
   </main>
 
-  <template id="tmplHola">
-    {{#personas}}
-    <h4>hola {{nombre}}</h4>
-    {{/personas}}
+  <script type="tmpl/mustache" id="tmplTabla">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#personas}}
+          <tr>
+            <th scope="row">1</th>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td>{{city}}</td>
+          </tr>
+            {{/personas}}
+        </tbody>
+      </table>
   </template>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
