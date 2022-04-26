@@ -1,0 +1,36 @@
+// crear el elemento input tipo texto
+{
+    let input = document.createElement("input");
+    input.type = "text";
+    input.placeholder ="igresar un texto"
+    document.body.appendChild(input);
+}
+
+// crear un boton
+{
+    let button = document.createElement("input")
+    button.type = "button"
+    button.setAttribute("value","Haga Click")
+    document.body.appendChild(button)
+// evento click
+    function evento(){
+        alert("input type = 'text'")
+    }
+    button.onclick = evento
+}
+
+// conjetura de collatz
+
+numero = parseInt(prompt("Porfavor ingrese un numero"))
+n = numero
+while(n > 1){
+    if(n % 2 == 0){
+        n=parseInt( n / 2)
+        console.log( n + " ")
+    }
+    else{
+        n = (n * 3 ) + 1
+        console.log( n + " ")
+    }
+}
+console.log

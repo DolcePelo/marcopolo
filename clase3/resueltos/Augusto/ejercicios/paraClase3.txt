@@ -1,0 +1,32 @@
+Ejercicio para la clase 3
+----------------------------------------------------------------------
+
+Ejercicio para investigar
+
+Crear un <input type="text">
+crear un boton
+escuchar el evento click del boton y cuando haga click
+mostrar en un alert el valor que tiene el <input type="text">
+
+Una segunda instancia seria, incrementar en uno el valor del texto
+
+----------------------------------------------------------------------
+Conjetura de collatz
+----------------------------------------------------------------------
+
+La conjetura de Collatz (tambien llamada 3n + 1)
+
+(a) Dado un numero si es par ? lo divido por dos. volver a (a)
+    si es impar lo multiplico por (3n + 1) 
+    volver a evaluar (a)
+
+Tengo que hacer una funcion, que acepte un numero
+
+La conjetura de collatz dice que todos los numeros bajo este algoritmo
+terminan en uno.
+
+youtube ponene conjetura de collatz.
+
+
+
+

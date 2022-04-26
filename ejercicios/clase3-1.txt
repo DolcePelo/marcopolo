@@ -1,0 +1,17 @@
+Ejemplo que yo les dejo
+
+let datos = { personas: [{nombre: 'Oscar'}, {nombre: 'Valeria'}, {nombre: 'Erika'}, {nombre: 'Cesar'}] }
+let tmpl = document.getElementById('tmplHola').innerHTML
+
+document.getElementById('miDisplay').innerHTML = Mustache.render(tmpl, datos)
+
+Ejercicio que quiero que hagan
+
+https://getbootstrap.com/docs/4.0/content/tables/
+
+Poner el prefijo de la tabla el head, el sufijo
+Luego el grupo repetitivo que es una fila.
+
+Por ultimo pasarle datos.
+
+
