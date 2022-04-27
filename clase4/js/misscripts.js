@@ -18,6 +18,29 @@ Los voy a ir poniendo en miDisplay
 
 */
 
+/*
+atraparClickPorId('menu1', () => {
+    document.getElementById('miDisplay').innerHTML =
+    document.getElementById('miImagen').innerHTML
+})
+
+atraparClickPorId('menu2', () => {
+    document.getElementById('miDisplay').innerHTML =
+    document.getElementById('miTexto').innerHTML
+})
+*/
+
+
+
+/*
 document.getElementById('menu1').addEventListener('click', e => {
     e.preventDefault();
+    document.getElementById('miDisplay').innerHTML =
+    document.getElementById('miImagen').innerHTML
 })
+document.getElementById('menu2').addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('miDisplay').innerHTML =
+    document.getElementById('miTexto').innerHTML
+})
+*/
