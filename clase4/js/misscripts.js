@@ -18,6 +18,8 @@ Los voy a ir poniendo en miDisplay
 
 */
 
+
+
 /*
 atraparClickPorId('menu1', () => {
     document.getElementById('miDisplay').innerHTML =
@@ -44,3 +46,20 @@ document.getElementById('menu2').addEventListener('click', e => {
     document.getElementById('miTexto').innerHTML
 })
 */
+
+/*
+Trabajo con Eventos
+*/
+
+document.getElementById('uno').addEventListener('click', () => {
+    console.log('UNO: ' + new Date().getMilliseconds())
+})
+
+document.getElementById('dos').addEventListener('click', () => {
+    console.log('DOS: ' + new Date().getMilliseconds())
+})
+
+document.getElementById('tres').addEventListener('click', () => {
+    console.log('TRES: ' + new Date().getMilliseconds())
+})
+
