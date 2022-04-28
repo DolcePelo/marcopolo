@@ -20,17 +20,16 @@ Los voy a ir poniendo en miDisplay
 
 
 
-/*
 atraparClickPorId('menu1', () => {
     document.getElementById('miDisplay').innerHTML =
-    document.getElementById('miImagen').innerHTML
+    document.getElementById('templateUnoDosTres').innerHTML
 })
 
 atraparClickPorId('menu2', () => {
     document.getElementById('miDisplay').innerHTML =
     document.getElementById('miTexto').innerHTML
 })
-*/
+
 
 
 
@@ -51,6 +50,7 @@ document.getElementById('menu2').addEventListener('click', e => {
 Trabajo con Eventos
 */
 
+/*
 document.getElementById('uno').addEventListener('click', () => {
     console.log('UNO: ' + new Date().getMilliseconds())
 })
@@ -59,7 +59,9 @@ document.getElementById('dos').addEventListener('click', () => {
     console.log('DOS: ' + new Date().getMilliseconds())
 })
 
-document.getElementById('tres').addEventListener('click', () => {
+document.getElementById('tres').addEventListener('click', e => {
+    console.log(e)
+    e.stopPropagation()
     console.log('TRES: ' + new Date().getMilliseconds())
 })
-
+*/
