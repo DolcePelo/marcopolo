@@ -65,3 +65,12 @@ document.getElementById('tres').addEventListener('click', e => {
     console.log('TRES: ' + new Date().getMilliseconds())
 })
 */
+
+asyncForLoop(100, (iteracion, next, abort) => {
+    document.getElementById('miDisplay').innerHTML = iteracion
+    setTimeout(()=>{
+        next()
+    }, 100)
+}, () => {
+    console.log('asunto sellado')
+})
