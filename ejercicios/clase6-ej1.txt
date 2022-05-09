@@ -1,4 +1,7 @@
 Con todo lo mismo que tenemos en el formulario
 llamese iconito y ademas la leyenda de customValidity
 Hay que validar que sea cuit.
+cuitValidator('99-99999999-9') -> true|false
+
+
 
