@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Template Basico HTML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/micss.css" rel="stylesheet">
+  </head>
+  <body>
+  <main role="main">
+    <div class="container">
+      <div class="row fondonegro altura60">
+
+      </div>
+      <div class="row altura60">
+
+      </div>
+
+      <div class="row altura60">
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-secondary">Secondary</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div>
+      <div class="row altura60">
+      </div>
+      <div>
+        <a id="menu1" href="">Menu1</a> |
+        <a id="menu2" href="">Menu2</a>
+      </div>
+        <div id="miDisplay" class="col-sm-12">
+            <form id="miFormulario">
+            <div class="row">
+                <div class="col-sm-4">
+                    Nombre
+                </div>
+                <div class="col-sm-4">
+                    <input id="inpNombre" type="text" />
+                </div>
+                <div class="col-sm-4">
+                    <img id="chkNombre" class="iconito" src="https://e7.pngegg.com/pngimages/347/531/png-clipart-red-star-big-bullet-s-angle-leaf-thumbnail.png">
+                </div>
+            </div>
+            <div class="row altura20">
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Pais
+                </div>
+                <div class="col-sm-4">
+                    <input id="codPais" type="text" />
+                </div>
+                <div class="col-sm-4">
+                    <img id="chkCodPais" class="iconito" src="https://e7.pngegg.com/pngimages/347/531/png-clipart-red-star-big-bullet-s-angle-leaf-thumbnail.png">
+                </div>
+            </div>
+            <div class="row altura20">
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button id="enviarForm">Enviar</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+  </main>
+
+  <script id="templateUnoDosTres" type="tmpl/mustache">
+    <div id="uno">
+        <div id="dos">
+            <div id="tres">
+
+            </div>
+        </div>
+    </div>
+  </script>
+
+  <script id="miImagen" type="tmpl/mustache">
+    <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800"></img>
+  </script>
+
+  <script id="miTexto" type="tmpl/mustache">
+      <h1>TEXTO PLANO</h1>
+  </script>
+
+  <script type="tmpl/mustache" id="tmplTabla">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#personas}}
+          <tr>
+            <th scope="row">1</th>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td>{{city}}</td>
+          </tr>
+            {{/personas}}
+        </tbody>
+      </table>
+  </template>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.js"></script>
+  <script src="./js/cuit-validator.js"></script>
+  <script src="./js/eventosTresDosUno.js"></script>
+  <script src="./js/scriptsgenericos.js"></script>
+  <script src="./js/asyncForLoop.js"></script>
+  <script src="./js/misscripts.js"></script>
+
+</html>
