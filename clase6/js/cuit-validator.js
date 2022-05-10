@@ -42,7 +42,6 @@ let cuitValidator = cuit => {
         }
 
         return verificador === lastDigit;
-    } else {
-        throw Error('Formato de CUIT invalido.');
     }
+    return false;
 };
