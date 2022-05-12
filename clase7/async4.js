@@ -3,13 +3,18 @@ let _ = require('underscore')
 
 function unaFuncionCualquiera(funciones) {
     logger.info('voy a invocar a fn pero a los 3 segundos ')
-
-    logger.info('ya la encole')
+    for (let x = 0; x < funciones.length; x++) {
+        setTimeout(funciones[x], x * 2000)
+    }
+    logger.info('ya las encole a las ' + funciones.length)
 }
 
-unaFuncionCualquiera(() => {
-    logger.info('estoy dentro del callback')
-})
+unaFuncionCualquiera([
+    () => { console.log('funcion 1') },
+    () => { console.log('funcion 2') },
+    () => { console.log('funcion 3') },
+    () => { console.log('funcion 4') },
+])
 
 /*
 1) unaFuncionCualquiera recibe un array de funciones

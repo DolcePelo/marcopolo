@@ -1,0 +1,18 @@
+Ejercicio para el Lunes.
+
+Hacer que el iconito de la estrella que aparece en el browser que titile.
+
+esto es con setTimeout pero periodos muy cortos, y un cambio de estado
+
+Es decir, si la ultima vez le puse clase .iconito ahora lo paso a .noIconito
+y viceversa.
+
+Referencias
+
+document.addEventListener() -> recibe un 'click', pero ademas un callback
+es asincronico.
+
+setTimeout
+
+forEachAsync como referencia, ver los videos.
+
