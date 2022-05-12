@@ -1,7 +1,7 @@
-let logger = require('./lib/logger')('async1')
+let logger = require('./lib/logger')('async4')
 let _ = require('underscore')
 
-function unaFuncionCualquiera(fn) {
+function unaFuncionCualquiera(funciones) {
     logger.info('voy a invocar a fn pero a los 3 segundos ')
 
     logger.info('ya la encole')
@@ -12,6 +12,7 @@ unaFuncionCualquiera(() => {
 })
 
 /*
-donde deberia poner el setTimeout para que llame al callback
-como minimo a los 3000 ms
+1) unaFuncionCualquiera recibe un array de funciones
+2) voy a encolar cada una de las funciones del array
+   con un segundo de diferencia
 */
