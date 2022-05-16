@@ -1,0 +1,31 @@
+Teoria en lo que tiene que ver con manejo asincronico.
+
+Que son las abstracciones.
+
+En computacion lo mas elemental es que todo ocurre de manera asincronica.
+
+Muevo el mouse, se disparan eventos
+Digito una tecla se disparan eventos
+Leo un archivo, lo hago a traves del sistema operativo windows o linux
+y cuando el archivo se termina de cargar en memoria, se dispara un evento.
+cuando abro un socket, para hacer una consulta a una ip. se hace la peticion
+y luego cuando se termina de cargar esa peticion se dispara un evento.
+
+Que abstraccion utilizar sincronica o asincronica ?????
+
+Sincronica es:
+
+let contenido = leerArchivo("/usr/texto.txt");
+console.log(contenido);
+
+Javascript opta por la abstraccion asincronica
+
+console.log('paso 1');
+leerArrchivo("/usr/texto", (err, contenido) => {
+   console.log(contenido);
+});
+console.log('paso 2');
+
+Hasta tanto no haya nada por ejecutar de forma sincronica, por mas que hayan 
+terminado las tareas asincronicas NO se ejecutan.
+
