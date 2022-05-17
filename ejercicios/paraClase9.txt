@@ -1,0 +1,20 @@
+Para la clase 9 (Lunes 23 de Mayo)
+
+En virtud de la sentencia
+
+fetch('datos.json').then(z => z.json()).then(z => alert(z) ..  meter mano aca)
+fetch('datos.json').then(z => z.json()).then(z => console.log(z) ... meter mano aca)
+
+averiguar que datos vienen en z
+como para mostrarlos por pantalla
+
+Idealmente, mostrar la secuencia del array como una unordered list
+utilizando Mustache
+
+Como dividir en pasos
+
+1) Jugar con un poco con los datos que vienen
+2) Ver donde esta el array
+3) Hacer un template con una lista No ordenada
+4) Luego a lo ultimo Usar mustache basarse en las primeras clases.
+
