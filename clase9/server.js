@@ -11,15 +11,30 @@ app.use(express.json());
 
 let arrUsuarios = []
 
+app.get('/api/crearusuarios', (request, response) => {
+    arrUsuarios.push(genUsuario())
+    arrUsuarios.push(genUsuario())
+    arrUsuarios.push(genUsuario())
+    arrUsuarios.push(genUsuario())
+    arrUsuarios.push(genUsuario())
+    response.status(200).send(JSON.stringify({status:'ok'}))
+})
+
 app.get('/api/inventarusuario', (request, response) => {
     let nuevoUsuario = genUsuario()
-    arrUsuarios.push(nuevoUsuario)
     response.status(200).send(JSON.stringify(nuevoUsuario))
 })
 
 app.get('/api/usuario/:id', (request, response) => {
-    // Aca hay que buscar por el id y si se encuentra retornarlo
-    // si no se encuentra retornar un 404
+    let id = request.params.id
+    let result = _.filter(arrUsuarios, z => z.id === id)
+
+    if (result.length === 0) {
+        response.status(404).send(JSON.stringify({status:'NOT FOUND'}))
+    }
+    else {
+        response.status(200).send(JSON.stringify(result[0]))
+    }
 })
 
 app.get('/api/usuario', (request, response) => {
@@ -43,7 +58,7 @@ app.post('/api/usuario', (request, response) => {
 
 app.put('/api/usuario/:id', (request, response) => {
     // No es posible modificar el id de base de datos.
-    if(request.body._id) {
+    if (request.body._id) {
         response.status(400).end(JSON.stringify({Error: 'No es posible modificar un campo especificado.'}));
         return;
     }

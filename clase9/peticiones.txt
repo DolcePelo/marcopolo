@@ -1,0 +1,50 @@
+Para crear los usuario iniciales
+--------------------------------
+
+fetch('/api/crearusuarios').then(z => console.log(z.status))
+
+Inventa un usuario y nos lo devuelve
+------------------------------------
+
+fetch('/api/inventarusuario')
+.then(z => z.json())
+.then(z => console.log(z))
+
+
+Este es el get de usuario
+-------------------------
+
+fetch('/api/usuario')
+.then(z => {
+   console.log('codigo de respuesta HTTP: ' + z.status)
+   if (z.status === 200) {
+      return z.json()
+   }
+})
+.then(datos => {
+   console.log(datos)
+})
+
+Para obtener un solo usuario
+----------------------------
+
+fetch('/api/usuario/0d855127-86c4-4810-b7f8-689ce0a23517')
+.then(z => {
+   console.log('codigo de respuesta HTTP: ' + z.status)
+   if (z.status === 200) {
+      return z.json()
+   }
+})
+.then(datos => {
+   console.log('datos que hay en el servidor: ')
+   console.log(datos)
+})
+
+
+Para agregar un usuario
+-----------------------
+
+
+Para borrar un usuario
+-----------------------
+
