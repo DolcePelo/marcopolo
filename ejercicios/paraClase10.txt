@@ -1,0 +1,30 @@
+Vamos a crear un formulario
+
+con los campos id, nombre, apellido, ciudad, pais
+
+con el endpoint inventarUsuario vamos a llenar el formulario
+vamos a colocar cada campo con su respectiva variable de objeto
+
+Una vez llenado el formulario, con un boton crear, voy a hacer
+un submit, y para esto tengo dos alternativas.
+
+agarrar campo por campo con document.getElementById
+
+ponerlo en un json y hacer el fetch() con el metodo post.
+
+Esto lo que va a hacer es agregar ese registro en el backend.
+
+Una buena idea, seria que debajo del form esten todos los registros
+creados hasta el momento y se refresquen en cada operacion.
+
+-----------------------------
+Esto es solo para investigar.
+-----------------------------
+
+document.querySelectorAll('input')
+document.querySelectorAll('elNombreDeUnaClase')
+
+El query querySelectorAll nos va a dar todos los componentes
+que tengan o bien el tipo input, o bien el nombre de la clase.
+
+ 

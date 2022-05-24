@@ -50,10 +50,10 @@ app.get('/api/usuario', (request, response) => {
 
 app.post('/api/usuario', (request, response) => {
     // Tengo que tomar el body e insertarlo en mongodb
-    let obj = request.body
-    let nuevoUsuario = JSON.parse(obj)
+    console.log(request.body)
+    let nuevoUsuario = request.body
     arrUsuarios.push(nuevoUsuario)
-    response.status(201)
+    response.status(201).send(JSON.stringify({status:'ok'}))
 })
 
 app.put('/api/usuario/:id', (request, response) => {

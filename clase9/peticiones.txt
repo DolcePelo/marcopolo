@@ -8,7 +8,7 @@ Inventa un usuario y nos lo devuelve
 
 fetch('/api/inventarusuario')
 .then(z => z.json())
-.then(z => console.log(z))
+.then(z => { window.ultimoInventado = z; console.log('ver ultimoInventado') })
 
 
 Este es el get de usuario
@@ -43,6 +43,29 @@ fetch('/api/usuario/0d855127-86c4-4810-b7f8-689ce0a23517')
 
 Para agregar un usuario
 -----------------------
+
+Recordar antes inventar un usuario para luego hacer el fetch con el post.
+
+fetch('/api/usuario', {
+   method: 'POST',
+   headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin':'*'
+   },
+   body: JSON.stringify(ultimoInventado)
+})
+.then(function(response) {
+   console.log('response =', response);
+   return response.json();
+})
+.then(datos => {
+   console.log(datos)
+})
+.catch(function(err) {
+   console.error(err);
+});
+
+
 
 
 Para borrar un usuario
