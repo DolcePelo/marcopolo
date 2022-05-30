@@ -1,0 +1,15 @@
+.fondonegro {
+  background-color: black;
+}
+
+.altura60 {
+  height: 60px;
+}
+
+.botonVisible {
+  display: inline-block;
+}
+
+.botonInvisible {
+  display: none;
+}

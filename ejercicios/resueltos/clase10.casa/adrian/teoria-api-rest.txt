@@ -1,0 +1,37 @@
+Browser en javascript ------- fetch peticion HTTP ---------- SERVER
+
+API REST
+
+Cuatro verbos HTTP que son:
+
+HTTP GET  ---> Es para obtener datos
+
+La forma que tiene el get es: /api/usuario?nombre=Beto
+La otra forma del get es:     /api/usuario/idDelUsuario
+
+En el primer caso va a hacer coincidir todos los que tengan nombre=Beto
+Y los va a retornar con un codigo 200 si es que todo estuvo ok.
+
+En el segundo solo va a retornar 200 si es que el id existe
+sino va a retornar 404
+
+HTTP POST ---> Es para crear datos 
+Retorna 201 created o alguno de los tipo de error
+
+Crea el recurso, envia los datos en el body del request
+
+HTTP PUT  ---> Modificar datos
+
+/api/usuario/idDelUsuario
+{
+   Json correspondiente
+}
+
+Retorna 200 OK, o bien alguno de los codigos de error
+
+HTTP DELETE -> Borrar datos
+
+/api/usuario/idDelUsuario
+
+retorna 200 OK, o bien alguno de los codigos de error
+

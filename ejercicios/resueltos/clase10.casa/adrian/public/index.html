@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Template Basico HTML</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/micss.css" rel="stylesheet">
+  </head>
+  <body>
+  <main role="main">
+    <div class="container-fluid">
+       <div class="row fondonegro altura60">
+
+      </div>
+      <!--<div class="row altura60">
+
+      </div> -->
+
+      <!-- <div class="row altura60">
+        <div class="col-sm-6">
+          <button type="button" id="btnAdd" class="btn btn-secondary">Secondary</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+      </div> -->
+
+      <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-6 mt-2" id="divForm">
+        <form>
+          <div class="input-group mb-1 input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Id</span>
+              </div>
+              <input type="text" class="js-inputcontrol form-control" id="pid" disabled>
+          </div>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nombre :</span>
+            </div>
+            <input type="text" class="js-inputcontrol form-control" id="pfirstName">
+          </div>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend" >
+              <span class="input-group-text">Apellido :</span>
+            </div>
+            <input type="text" class="js-inputcontrol form-control" id="plastName">
+          </div>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Ciudad :</span>
+            </div>
+            <input type="text" class="js-inputcontrol form-control" id="pcity">
+          </div>
+          <div class="input-group mb-1 input-group-sm">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Pais :</span>
+            </div>
+            <input type="text" class="js-inputcontrol form-control" id="pcountry">
+          </div>
+          <button type="button" id="btnCrear" class="mb-2 mt-1 btn btn-primary">Crear</button>
+          <button type="button" id="btnGuardar" class="mb-2 mt-1 btn btn-success">Guardar</button>
+        </form>
+      </div>
+
+      <div id="miDisplay" class="col-12">
+      </div>
+
+    </div>
+  </main>
+
+  <script type="tmpl/mustache" id="tmplTabla">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Pais</th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#personas}}
+          <tr>
+            <td>{{id}}</td>
+            <td>{{firstName}}</td>
+            <td>{{lastName}}</td>
+            <td>{{city}}</td>
+            <td>{{country}}</td>
+          </tr>
+            {{/personas}}
+        </tbody>
+      </table>
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.js"></script>
+  <script src="./js/scriptsgenericos.js"></script>
+  <script src="./js/misscripts.js"></script>
+
+</html>

@@ -1,0 +1,56 @@
+.forma
+{
+    width: 50%;
+    background-color: rgb(182, 185, 185);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0px 25%;
+    margin-top: 50px;
+    
+}
+#titulo
+{
+    text-align: center;
+    font-size:x-large;
+    width: 100%;
+    height: 25px;
+    padding-top: 25px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+#formulario
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#formulario .elemento
+{
+    width: 45%;
+    height: 25px;
+    margin: 40px 10px;
+    border-style: none;
+    border-bottom-style: groove;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: black;
+}
+#formulario .envio
+{
+    width: 45%;
+    margin-bottom: 20px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+td, th
+{
+    border: solid black 1px;
+    padding: 10px;
+    text-align: center;
+}
+.tablaBase
+{
+    margin: 25px 40%;
+}
