@@ -1,0 +1,6 @@
+Diferenciar entre las tres funciones basicas de la programacion funcional.
+
+foreach,
+map, 
+reduce
+
