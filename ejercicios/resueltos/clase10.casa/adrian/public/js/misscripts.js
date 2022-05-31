@@ -8,9 +8,12 @@ function blanquear(){
 function Crear() {
     fetch('/api/inventarUsuario')
         .then(z => z.json())
-        .then(z => { for(const property in z) SEL(`p${property}`).value = z[property]})
-    SEL('btnGuardar').classList.remove('botonInvisible')
-    SEL('btnGuardar').classList.add('botonVisible')
+        .then(z => {
+            for(const property in z) SEL(`p${property}`).value = z[property]
+
+            SEL('btnGuardar').classList.remove('botonInvisible')
+            SEL('btnGuardar').classList.add('botonVisible')
+        })
 }
 
 function tomarFormulario() {
