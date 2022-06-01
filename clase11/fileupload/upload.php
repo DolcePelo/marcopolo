@@ -1,5 +1,4 @@
 <?php
-   echo "hola";
    if(isset($_FILES['image'])){
       $errors= array();
       $file_name = $_FILES['image']['name'];
