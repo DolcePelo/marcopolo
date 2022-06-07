@@ -28,20 +28,32 @@ console.log(arrPosicionMasTipo)
 let objResultado = {}
 objResultado.todosLosObjetos = _.filter(arrPosicionMasTipo, z => {
    let td = z.tipoDeDato
-   delete z['tipoDeDato']
    return td === 'object'
 })
 
-/*
-objResultado.todosLosNumber = _.filter(arrCrudo, z => typeof z === 'number')
-objResultado.todosLosBoolean = _.filter(arrCrudo, z => typeof z === 'boolean')
-objResultado.todosLosString = _.filter(arrCrudo, (z, idx) => {
-   console.log(idx)
-   if (typeof z === 'string') {
-
-   }
-
+objResultado.todosLosNumber = _.filter(arrPosicionMasTipo, z => {
+   let td = z.tipoDeDato
+   return td === 'number'
 })
-*/
+
+objResultado.todosLosBoolean = _.filter(arrPosicionMasTipo, z => {
+   let td = z.tipoDeDato
+   return td === 'boolean'
+})
+
+objResultado.todosLosString = _.filter(arrPosicionMasTipo, (z, idx) => {
+   let td = z.tipoDeDato
+   return td === 'string'
+})
+
+console.log('Ahora vamos a remover todos los tipoDeDato')
+
+_.forEach(objResultado, xs => {
+   console.log('---------------------')
+   _.forEach(xs, z => {
+      delete z['tipoDeDato']
+   })
+   // console.log(xs)
+})
 
 console.log(objResultado)
