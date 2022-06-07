@@ -24,9 +24,15 @@ let arrPosicionMasTipo = _.map(arrCrudo, (z, idx) => {
 
 console.log(arrPosicionMasTipo)
 
-/*
+
 let objResultado = {}
-objResultado.todosLosObjetos = _.filter(arrCrudo, z => typeof z === 'object')
+objResultado.todosLosObjetos = _.filter(arrPosicionMasTipo, z => {
+   let td = z.tipoDeDato
+   delete z['tipoDeDato']
+   return td === 'object'
+})
+
+/*
 objResultado.todosLosNumber = _.filter(arrCrudo, z => typeof z === 'number')
 objResultado.todosLosBoolean = _.filter(arrCrudo, z => typeof z === 'boolean')
 objResultado.todosLosString = _.filter(arrCrudo, (z, idx) => {
@@ -36,8 +42,6 @@ objResultado.todosLosString = _.filter(arrCrudo, (z, idx) => {
    }
 
 })
-
-console.log(arrCrudo)
-console.log(resultado)
-console.log(objResultado)
 */
+
+console.log(objResultado)
