@@ -5,22 +5,24 @@ let numeroAIngestigar = 3
 
 let esDivisible = (dividendo, divisor) => dividendo % divisor === 0
 
-for (;;) {
+;(function fnnivel1() {
    // tengo que pasar el numero a investigar por todos
    // ls elementos del array para ver si alguno es
    // divisible
    console.log('investigando: ' + numeroAIngestigar)
-   let llegoAlFinal = true
-   for (let idx = 0; idx < arrNumerosPrimos.length; idx++) {
-      if (esDivisible(numeroAIngestigar, arrNumerosPrimos[idx])) {
-         llegoAlFinal = false
-         console.log('BREAK')
-         break;
+
+   ;(function fnNivel2(idx) {
+      console.log('    comparando subindice: ' + idx)
+      if (idx === arrNumerosPrimos.length - 1) {
+         return
       }
-   }
-   if (llegoAlFinal) {
-      arrNumerosPrimos.push(numeroAIngestigar)
-   }
+      if (esDivisible(numeroAIngestigar, arrNumerosPrimos[idx])) {
+         return
+      }
+      _.defer(fnNivel2, idx + 1)
+   })(0)
+
    numeroAIngestigar++
-   console.log(arrNumerosPrimos)
-}
+   arrNumerosPrimos.push(numeroAIngestigar)
+   _.defer(fnnivel1)
+})()

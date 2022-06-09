@@ -1,0 +1,41 @@
+Ahora que ya conocemos el _.filter
+Vamos a hacer un array de objetos con nombre, apellido, id.
+
+Vamos a tener un input text y por cada tecla ingresada en el input
+text, vamos a comparar el array de objetos y vamos a re-renderizar
+toda la pantalla. Ej.
+
+[]
+
+Camilo
+Sebastian
+Maria DB
+Lorena
+Manu
+
+[m]
+
+Maria DB
+Manu
+
+-------------------------------------------------------------------------
+Algo OPCIONAL!!!!, que me gusta hacer es:
+
+Dibujar una ruleta, con un click es equivalente a una apuesta.
+Numeros, Colores, Par/Impar
+
+Tener un boton de jugar; este boton va a generar un numero random [0..36]
+y en base a lo que sale. Calcular lo que pierdo, lo que gano.
+Renderizar eso.
+Usted "Gano/Perdio"
+
+-------------------------------------------------------------------------
+
+Por ultimo, intentar terminar el ejercicio de numero primos haciendo la 
+renderizacion en el browser.
+
+
+
+
+
+
