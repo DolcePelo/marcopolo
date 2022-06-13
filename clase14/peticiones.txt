@@ -1,0 +1,73 @@
+Para crear los usuario iniciales
+--------------------------------
+
+fetch('/api/crearusuarios').then(z => console.log(z.status))
+
+Inventa un usuario y nos lo devuelve
+------------------------------------
+
+fetch('/api/inventarusuario')
+.then(z => z.json())
+.then(z => { window.ultimoInventado = z; console.log('ver ultimoInventado') })
+
+
+Este es el get de usuario
+-------------------------
+
+fetch('/api/usuario')
+.then(z => {
+   console.log('codigo de respuesta HTTP: ' + z.status)
+   if (z.status === 200) {
+      return z.json()
+   }
+})
+.then(datos => {
+   console.log(datos)
+})
+
+Para obtener un solo usuario
+----------------------------
+
+fetch('/api/usuario/0d855127-86c4-4810-b7f8-689ce0a23517')
+.then(z => {
+   console.log('codigo de respuesta HTTP: ' + z.status)
+   if (z.status === 200) {
+      return z.json()
+   }
+})
+.then(datos => {
+   console.log('datos que hay en el servidor: ')
+   console.log(datos)
+})
+
+
+Para agregar un usuario
+-----------------------
+
+Recordar antes inventar un usuario para luego hacer el fetch con el post.
+
+fetch('/api/usuario', {
+   method: 'POST',
+   headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin':'*'
+   },
+   body: JSON.stringify(ultimoInventado)
+})
+.then(function(response) {
+   console.log('response =', response);
+   return response.json();
+})
+.then(datos => {
+   console.log(datos)
+})
+.catch(function(err) {
+   console.error(err);
+});
+
+
+
+
+Para borrar un usuario
+-----------------------
+
