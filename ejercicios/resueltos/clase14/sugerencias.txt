@@ -1,0 +1,13 @@
+Donde dice, enganchar con otro codigo.
+Llamar una funcion (NO HACE FALTA CAMBIAR LOS NOMBRES DE VARIABLES)
+
+Una vez creada la funcion
+
+recorremos el array
+
+if (amount > 500) {
+   consultarUsuario(id, () => {
+      next()
+   })
+}
+

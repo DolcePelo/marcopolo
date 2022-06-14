@@ -18,7 +18,7 @@ app.get('/api/obtenerusuarios', (request, response) => {
     })
     _.delay(() => {
       response.status(200).send(JSON.stringify(arr))
-    }, 20)
+    }, 5)
     arrUsuarios.push(...arr)
 })
 
