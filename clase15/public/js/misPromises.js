@@ -27,18 +27,22 @@ codigoTipico((err, resultado) => {
 
 */
 
-let fnProm1 = () => {
+let fnProm1 = (fallo) => {
    return new Promise((resolve, reject) => {
       console.log('Antes de entrar al delay')
       _.delay(() => {
          console.log('Dentro del delay')
-         // resolve('TERMINADO EL DELAY !!!')
-         reject(new Error('Aca ocurrio un fallo'))
+         if (fallo) {
+            reject(new Error('Aca ocurrio un fallo'))
+         }
+         else {
+            resolve('TERMINADO EL DELAY !!!')
+         }
       }, 2000)
    })
 }
 
-fnProm1()
+fnProm1(false)
 .then(z => { console.log('El valor de z es: ' + z) })
 .catch(err => { console.log(err) })
 
@@ -48,4 +52,7 @@ Dos de ellas van a ser asincronicas con Promise
 Una de ellas va a ser sincronica con return
 */
 
-
+/*
+Luego vamos a explorar las dos promise una a la vez
+Una va a fallar y otra va a dar ok.
+*/
