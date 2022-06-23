@@ -1,0 +1,14 @@
+Leer Json Web Token
+(Un mecanismo de generacion de token)
+
+https://jwt.io/
+
+Familiarisarse con el concepto de hash o funcion hash
+(Una de las tres formas de encriptacion)
+
+Familiarisarse con el concepto de base64, que es ?
+(Asi como hay base 10, base 16 Hexadecimal, base64 64 caracteres)
+
+Wikipedia alcanza.
+
+
