@@ -7,7 +7,7 @@ function obtenerMensaje() {
 }
 
 function decirHola() {
-    alert(obtenerMensaje())
+    console.log(obtenerMensaje())
 }
 
 module.exports = decirHola

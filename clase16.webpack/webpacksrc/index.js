@@ -1,9 +1,12 @@
-const fn = require('./modulito')
-const underscore = require('underscore')
+let fn = require('./modulito')
+let underscore = require('underscore')
+let grabarLocalStorage = require('./grabarLocalStorage')
 
 {
-    alert('Este es el punto de entrada de webpack !!!!')
+    console.log('vamos a leer el local storage')
+    console.log(localStorage.getItem('token'))
     underscore.delay(() => {
         fn()
+        grabarLocalStorage()
     }, 2000)
 }
