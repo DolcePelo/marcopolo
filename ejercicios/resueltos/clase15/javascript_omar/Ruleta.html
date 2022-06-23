@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Curso JavaScript</title>
+     <!-- Bootstrap core CSS -->
+     <link href="bootstrap.css" rel="stylesheet">
+     <link href="styleRuleta.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+        <h1>R U L E T A</h1>
+    </header>
+    <div id="ruleta" class="container">
+        <!--  Parte que Gira  -->
+        <div id="ParteGira">
+            <img src="https://oho-web.000webhostapp.com/img/Ruleta_fija.jpg" alt="RuletaFija" id="RuletaFija" class="Rfija" style="display:block">
+            <img src="https://oho-web.000webhostapp.com/img/Ruleta_anim.gif" alt="RuletaGirando" id="RuletaGirando" class="Rgirando" style="display:none">
+        </div>
+        
+        <div id="cuerpoMesa">    
+        <!--  Cuerpo de la mesa NUMEROS  -->
+            <div id="numerosMesa">
+                <div id="cero">
+                    <img src="https://oho-web.000webhostapp.com/img/00.jpg" alt="MesaRuleta00" id="n00">
+                </div>
+                <div id="PrimeraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/03.jpg" alt="MesaRuleta03" id="n03">
+                    <img src="https://oho-web.000webhostapp.com/img/02.jpg" alt="MesaRuleta02" id="n02">
+                    <img src="https://oho-web.000webhostapp.com/img/01.jpg" alt="MesaRuleta01" id="n01">
+                </div>
+                <div id="PrimeraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/06.jpg" alt="MesaRuleta06" id="n06">
+                    <img src="https://oho-web.000webhostapp.com/img/05.jpg" alt="MesaRuleta05" id="n05">
+                    <img src="https://oho-web.000webhostapp.com/img/04.jpg" alt="MesaRuleta04" id="n04">
+                </div>
+                <div id="PrimeraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/09.jpg" alt="MesaRuleta09" id="n09">
+                    <img src="https://oho-web.000webhostapp.com/img/08.jpg" alt="MesaRuleta08" id="n08">
+                    <img src="https://oho-web.000webhostapp.com/img/07.jpg" alt="MesaRuleta07" id="n07">
+                </div>
+                <div id="PrimeraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/12.jpg" alt="MesaRuleta12" id="n12">
+                    <img src="https://oho-web.000webhostapp.com/img/11.jpg" alt="MesaRuleta11" id="n11">
+                    <img src="https://oho-web.000webhostapp.com/img/10.jpg" alt="MesaRuleta10" id="n10">
+                </div>
+                <div id="SegundaDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/15.jpg" alt="MesaRuleta15" id="n15">
+                    <img src="https://oho-web.000webhostapp.com/img/14.jpg" alt="MesaRuleta14" id="n14">
+                    <img src="https://oho-web.000webhostapp.com/img/13.jpg" alt="MesaRuleta13" id="n13">
+                </div>
+                <div id="SegundaDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/18.jpg" alt="MesaRuleta18" id="n18">
+                    <img src="https://oho-web.000webhostapp.com/img/17.jpg" alt="MesaRuleta17" id="n17">
+                    <img src="https://oho-web.000webhostapp.com/img/16.jpg" alt="MesaRuleta16" id="n16">
+                </div>
+                <div id="SegundaDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/21.jpg" alt="MesaRuleta21" id="n21">
+                    <img src="https://oho-web.000webhostapp.com/img/20.jpg" alt="MesaRuleta20" id="n20">
+                    <img src="https://oho-web.000webhostapp.com/img/19.jpg" alt="MesaRuleta19" id="n19">
+                </div>
+                <div id="SegundaDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/24.jpg" alt="MesaRuleta24" id="n24">
+                    <img src="https://oho-web.000webhostapp.com/img/23.jpg" alt="MesaRuleta23" id="n23">
+                    <img src="https://oho-web.000webhostapp.com/img/22.jpg" alt="MesaRuleta22" id="n22">
+                </div>
+                <div id="TerceraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/27.jpg" alt="MesaRuleta27" id="n27">
+                    <img src="https://oho-web.000webhostapp.com/img/26.jpg" alt="MesaRuleta26" id="n26">
+                    <img src="https://oho-web.000webhostapp.com/img/25.jpg" alt="MesaRuleta25" id="n25">
+                </div>
+                <div id="TerceraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/30.jpg" alt="MesaRuleta30" id="n30">
+                    <img src="https://oho-web.000webhostapp.com/img/29.jpg" alt="MesaRuleta29" id="n29">
+                    <img src="https://oho-web.000webhostapp.com/img/28.jpg" alt="MesaRuleta28" id="n28">
+                </div>
+                <div id="TerceraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/33.jpg" alt="MesaRuleta33" id="n33">
+                    <img src="https://oho-web.000webhostapp.com/img/32.jpg" alt="MesaRuleta32" id="n32">
+                    <img src="https://oho-web.000webhostapp.com/img/31.jpg" alt="MesaRuleta31" id="n31">
+                </div>
+		        <div id="TerceraDoc">
+                    <img src="https://oho-web.000webhostapp.com/img/36.jpg" alt="MesaRuleta36" id="n36">
+                    <img src="https://oho-web.000webhostapp.com/img/35.jpg" alt="MesaRuleta35" id="n35">
+                    <img src="https://oho-web.000webhostapp.com/img/34.jpg" alt="MesaRuleta34" id="n34">
+                </div>
+                <img src="https://oho-web.000webhostapp.com/img/ParteDerecha.jpg" alt="MesaRuletaPD" id="x">
+            </div>
+            <!--  Cuerpo de la mesa Parte de Abajo A -->
+            <div id="ParteAbajoA">
+                <img src="https://oho-web.000webhostapp.com/img/ParteAbajo1.jpg" alt="MesaRuletaA1">
+            </div>
+            <!--  Cuerpo de la mesa Parte de Abajo B [Par - Impar - Rojo - Neegro]-->
+            <div id="ParteAbajoB">
+                <img src="https://oho-web.000webhostapp.com/img/ParteAbajo2a.jpg" alt="MesaRuletaB1" id="x">
+                <img src="https://oho-web.000webhostapp.com/img/Even_2a.jpg" alt="MesaRuletaB2" id="par">
+                <img src="https://oho-web.000webhostapp.com/img/Rojo_2.jpg" alt="MesaRuletaB3" id="rojo">
+                <img src="https://oho-web.000webhostapp.com/img/Barra_2.jpg" alt="MesaRuletaB4">
+                <img src="https://oho-web.000webhostapp.com/img/Negro_2.jpg" alt="MesaRuletaB5" id="negro">
+                <img src="https://oho-web.000webhostapp.com/img/Odd_2a.jpg" alt="MesaRuletaB6" id="impar">
+                <img src="https://oho-web.000webhostapp.com/img/ParteAbajo2b.jpg" alt="MesaRuletaB7" id="x">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-----  CONFORMACION DE LA APUESTA (TITULOS) ----->
+        <div class="row">
+            <div class="col-sm">
+              <h5 class="titulo1">Numero Apostado</h5>
+            </div>
+            <div class="col-sm">
+                <h5 class="titulo1">Color</h5>
+            </div>
+            <div class="col-sm">
+                <h5 class="titulo1">Par/Non</h5>
+              </div>
+            <div class="col-sm">
+                <h5 class="titulo1">Cantidad Apostada</h5>
+            </div>
+            <div class="col-sm">
+                <h5 class="titulo1">Pasos de $ 5</h5>
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+        <!-----  CONFORMACION DE LA APUESTA (VALORES) ----->
+        <div class="row">
+            <div class="col-sm" id="NroAp">
+                <h2 id="numApostado">00</h2>
+            </div>
+            <div class="col-sm" id="clrAp">
+                <input type="radio" name="color" value="rojo">
+                Rojo
+                <br>
+                <input type="radio" name="color" value="negro">
+                Negro
+            </div>
+            <div class="col-sm" id="parAp">
+                <input type="radio" name="parNon" value="par">
+                Par
+                <br>
+                <input type="radio" name="parNon" value="non">
+                Non
+            </div>
+            <div class="col-sm">
+                <h3 id="dineroApostado">$ 0</h3>
+            </div>
+            <div class="btn-group" role="group">
+                <button class="btn btn-warning" id="dineroMas">Dinero + </button>
+                <button class="btn btn-warning" id="dineroMenos">Dinero - </button>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-outline-success" id="apuesta">J U G A R</button>
+            </div>
+        </div>
+    </div>
+    <!--------  STATUS DEL MOMENTO  ----------->
+    <div class="container">
+        <h2 id="status"> Status </h2>
+    </div>
+    <!------ ESTADISTICA DE LO JUGADO --------->
+    <div class="container">
+        <h3>Estadistica</h3>
+        <table class="table">
+            <tr id="estadistica1">
+                <th>Ganados</th>
+                <th>Perdidos</th>
+                <th>Ganados a color</th>
+                <th>Ganados a par/impar</th>
+                <th>Jugados</th>
+                <th>Dinero Perdido</th>
+                <th>Dinero Ganado</th>
+                <th>Balance</th>
+            </tr>
+            <tr id="estadistica2">
+                <td id="ganados">0</td>
+                <td id="perdidos">0</td>
+                <td id="ganColor">0</td>
+                <td id="ganPar">0</td>
+                <td id="jugados">0</td>
+                <td id="dineroPer">$ 0</td>
+                <td id="dineroGan">$ 0</td>
+                <td id="balance">$ 10000</td>
+            </tr>
+        </table>
+        <p>OHO Informatics &copy; Copyright 2022</p>
+    </div>
+    
+    <script src="scriptRuleta.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    height: 70px;
+    background-color:darkgreen;
+    text-align: center;
+    text-decoration:underline;
+    color: aliceblue;
+    padding-top: 7px;
+}
+.container{
+    background-color: darkgreen;
+}
+.row{
+    align-items: center;
+}
+.titulo1{
+    color:aquamarine;
+    padding-top: 20px;
+}
+#status{
+    color:chartreuse;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#numApostado, #dineroApostado{
+    height: 70px;
+    background-color:darkgreen;
+    color: aliceblue;
+    padding: 22px;
+}
+#estadistica1, #estadistica2 {
+    text-align: center;
+    font-weight: bolder;
+    color:aliceblue;
+}
+.table{
+    margin-bottom: 0px;
+}
+p{                          /*Color y posicion Copyright*/
+    color:aliceblue;
+    margin-left: 80px;
+}
+#clrAp, #parAp, h3{             /*Color texto de los radios*/
+    color:aliceblue;
+}
+
+
+/*   --Dibujo de la ruleta--  */
+#ruleta{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color:darkgreen;
+}
+#RuletaFija, #RuletaGirando{
+    width: 280px;
+    height: 280px;
+}
+#PrimeraDoc, #SegundaDoc, #TerceraDoc{
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#cuerpoMesa{
+    display:flex;
+    flex-direction: column;
+}
+#cero, #numerosMesa, #ParteDerecha{
+    display:flex;
+}
+
