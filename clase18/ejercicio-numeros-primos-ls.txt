@@ -1,0 +1,20 @@
+Cual es la idea del ejercicio.
+
+Existe un proceso, que calcula los numeros primos, y dado que estos, se calculan
+teniendo en cuenta los numeros primos previos.
+
+En caso de cerrarse el browser, hay que arrancar teniendo los numero primos
+ya calculados hasta el momento.
+
+Poner en una consola, el numero que esta siendo evaluado, y los ultimos diez 
+numeros primos calculados.
+
+La otra idea es que cada modulo, cumple una funcion especifica.
+
+
+* Una idea que se me ocurrio, es que los primeros 1000, o 10000 no lo se.
+A lo mejor si se pueden calcular, y no es preciso meterlos en el local storage.
+
+Tener alguna variable que sea, proximo numero a calcular y esa variable este en el
+local storage.
+
