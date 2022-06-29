@@ -3,13 +3,13 @@ let _ = require('underscore')
 let esDivisible = (dividendo, divisor) => dividendo % divisor === 0
 
 // on finish hay que pasarle true/false
-function esPrimo(arrNumerosPrimos, numero, onFinish) {
+function esPrimo(arrNumerosPrimos, numeroAIngestigar, onFinish) {
 
-   console.log('investigando: ' + numeroAIngestigar)
+   console.log(arrNumerosPrimos)
 
-   ;(function fnNivel2(idx) {
+   function fnNivel2(idx) {
       console.log('    comparando subindice: ' + idx)
-      if (idx === arrNumerosPrimos.length - 1) {
+      if (idx === arrNumerosPrimos.length) {
          onFinish(true)
          return
       }
@@ -18,7 +18,10 @@ function esPrimo(arrNumerosPrimos, numero, onFinish) {
          return
       }
       _.defer(fnNivel2, idx + 1)
-   })(0)
+   }
+   _.defer(fnNivel2, 0)
+
+   return 'IN PROGRESS'
 }
 
 window.testEsPrimo = esPrimo

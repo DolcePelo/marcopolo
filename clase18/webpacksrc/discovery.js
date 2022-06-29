@@ -7,7 +7,7 @@ let eventos = {
    onNewNumberFound : z => z
 }
 
-let arrPrimeNumbersFound = []
+let arrPrimeNumbersFound = [2]
 
 let start = nroComienzo => {
    // Aca vamos a hacer otra imple de asyncForLoop
@@ -15,13 +15,14 @@ let start = nroComienzo => {
    loopSinRango(nroComienzo, (nroActual, next, abort) => {
       _.delay(() => {
          eventos.onActualNumber(nroActual)
-         esPrimo(1, 2, z => {
+         esPrimo(arrPrimeNumbersFound, nroActual, z => {
             if (z) {
-               eventos.onNewNumberFound(z)
+               arrPrimeNumbersFound.push(nroActual)
+               eventos.onNewNumberFound(nroActual)
             }
             next()
          });
-      }, 1000)
+      }, 5000)
    }, e => {
       console.log('aborto x: ' +  e)
    })
