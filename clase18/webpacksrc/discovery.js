@@ -22,7 +22,7 @@ let start = nroComienzo => {
             }
             next()
          });
-      }, 5000)
+      }, 0)
    }, e => {
       console.log('aborto x: ' +  e)
    })

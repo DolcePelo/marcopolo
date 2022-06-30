@@ -19,60 +19,17 @@
 
       </div>
       <div class="row altura60">
-
       </div>
-
-      <div class="row altura60">
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-secondary">Secondary</button>
-        </div>
-        <div class="col-sm-6">
-          <button type="button" class="btn btn-primary">Primary</button>
-        </div>
+      <div id="miDisplay" class="col-sm-12">
+         <div class="row">
+            <div class="col-sm-8">
+               <span id="mostrarNum"></span>
+            </div>
+            <div class="col-sm-4">
+               <span id="arrayPrimos"></span>
+            </div>
+         </div>
       </div>
-      <div class="row altura60">
-      </div>
-      <div>
-        <a id="menu1" href="">Menu1</a> |
-        <a id="menu2" href="">Menu2</a>
-      </div>
-        <div id="miDisplay" class="col-sm-12">
-            <form id="miFormulario">
-            <div class="row">
-                <div class="col-sm-4">
-                    Nombre
-                </div>
-                <div class="col-sm-4">
-                    <input id="inpNombre" type="text" />
-                </div>
-                <div class="col-sm-4">
-                    <img id="chkNombre" class="iconito" src="https://e7.pngegg.com/pngimages/347/531/png-clipart-red-star-big-bullet-s-angle-leaf-thumbnail.png">
-                </div>
-            </div>
-            <div class="row altura20">
-
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    Pais
-                </div>
-                <div class="col-sm-4">
-                    <input id="codPais" type="text" />
-                </div>
-                <div class="col-sm-4">
-                    <img id="chkCodPais" class="iconito" src="https://e7.pngegg.com/pngimages/347/531/png-clipart-red-star-big-bullet-s-angle-leaf-thumbnail.png">
-                </div>
-            </div>
-            <div class="row altura20">
-
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button id="enviarForm">Enviar</button>
-                </div>
-            </div>
-            </form>
-        </div>
     </div>
   </main>
 
@@ -90,8 +47,21 @@
     <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?w=800"></img>
   </script>
 
-  <script id="miTexto" type="tmpl/mustache">
-      <h1>TEXTO PLANO</h1>
+  <script id="miTabla" type="tmpl/mustache">
+   <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Ultimos primos</th>
+        </tr>
+      </thead>
+      <tbody>
+         {{#primos}}
+        <tr>
+          <td>{{.}}</td>
+        </tr>
+         {{/primos}}
+      </tbody>
+    </table>
   </script>
 
   <script type="tmpl/mustache" id="tmplTabla">

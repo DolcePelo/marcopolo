@@ -35,7 +35,7 @@
     "jquery": "^3.6.0",
     "jquery-validation": "^1.19.3",
     "jwt-decode": "^3.1.2",
-    "mustache": "^4.0.1",
+    "mustache": "^4.2.0",
     "silkrouter": "^4.2.8"
   }
 }
